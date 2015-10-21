@@ -37,10 +37,10 @@ void setup () {
   bg1X=640;
   bg2X=0;
   
+  hpX=56;
+  
   treasureX=floor(random(0,470));
   treasureY=floor(random(60,420));
-  
-  hpX=56;
   
   enemyX=0;
   enemyY=floor(random(50,420));
@@ -132,6 +132,11 @@ void draw() {
         hpX=56;
         fighterX=550;
         fighterY=240;
+        treasureX=floor(random(0,470));
+        treasureY=floor(random(60,420));
+  
+        enemyX=0;
+        enemyY=floor(random(50,420));
       }else{
         image(end1,0,0);
       }
