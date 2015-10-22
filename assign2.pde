@@ -37,7 +37,7 @@ void setup () {
   bg1X=640;
   bg2X=0;
   
-  hpX=56;
+  hpX=40;
   
   treasureX=floor(random(0,470));
   treasureY=floor(random(60,420));
@@ -103,7 +103,7 @@ void draw() {
       
       //enemy hit
       if(fighterX <= enemyX+40 && fighterX>=enemyX-40 && fighterY <= enemyY+50 && fighterY>= enemyY-50){
-        hpX -= 36;
+        hpX -= 40;
         enemyX=0;
         enemyY=floor(random(50,420));
       }
@@ -114,7 +114,7 @@ void draw() {
     //treasure hit
     image(treasure,treasureX,treasureY);
      if(fighterX <= treasureX+40 && fighterX>=treasureX-40 && fighterY <= treasureY+40 && fighterY>= treasureY-40){
-          hpX += 18;
+          hpX += 20;
       treasureX=floor(random(0,470));
       treasureY=floor(random(60,420));
      }
@@ -129,7 +129,7 @@ void draw() {
      if(mouseX>200 && mouseX<440 && mouseY>300 && mouseY<350)
       if(mousePressed){
         gameState = GAME_RUN;
-        hpX=56;
+        hpX=40;
         fighterX=550;
         fighterY=240;
         treasureX=floor(random(0,470));
