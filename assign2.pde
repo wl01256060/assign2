@@ -14,6 +14,7 @@ int fighterX,fighterY;
 final int GAME_START=1,GAME_RUN=2,GAME_LOSE=3;
 int gameState;
 
+
 boolean upPressed = false;
 boolean downPressed = false;
 boolean leftPressed = false;
