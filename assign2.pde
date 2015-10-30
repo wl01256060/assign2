@@ -108,7 +108,7 @@ void draw() {
         enemyX=0;
         enemyY=floor(random(50,420));
       }
-      if(hpX<=20){
+      if(hpX<=0){
         gameState = GAME_LOSE;
       }
       
